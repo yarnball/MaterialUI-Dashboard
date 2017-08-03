@@ -1,18 +1,6 @@
 import React from "react";
 import { typography } from "material-ui/styles";
-import {
-  grey600,
-  cyan400,
-  cyan600,
-  pink400,
-  pink500,
-  pink600,
-  purple400,
-  purple500,
-  purple600,
-  orange400,
-  orange600
-} from "material-ui/styles/colors";
+import { grey600, cyan400, cyan600, pink400, pink500, pink600, purple400, purple500, purple600, orange400, orange600} from "material-ui/styles/colors";
 import TopBoxes from "./TopBoxes";
 import Test from "./Test";
 import Graph from "./Graph";
@@ -43,7 +31,7 @@ const styles = {
   },
   loginIcon: {
     borderRadius: 3,
-    marginRight: 5,
+    marginLeft: 5,
     opacity: 0.75,
     cursor: "none",
     height: 25

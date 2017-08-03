@@ -8,7 +8,7 @@ This is an example repo for authenticating with Firebase and React Router.
 
 ![Screenshot desktop](http://i.imgur.com/RPyTQMl.jpg)
 
-### Mobile Preview
+### Mobilegit Preview
 ![Screenshot Mobile](http://i.imgur.com/ppF2yrE.jpg)
 
 
@@ -18,12 +18,16 @@ This is an example repo for authenticating with Firebase and React Router.
 * Add new users to ```/users``` in your Firebase database
 * Login/Logout Functionality
 * Material dashboard UI design
-* Ressponsive to mobiles/all devices
+* Responsive to mobiles/desktop design
 * Graphs using ReChart
 
-#### Instructions:
+#### Dev:
 * Swap out the firebase config in ```config/constants``` with your own API details
 * ```npm install```
 * ```npm start```
 * Visit ```localhost:3000```
-* Different port? Just write ```PORT=3001 npm start```
+* Different port? Run ```PORT=3001 npm start```
+
+#### Build/Production:
+* npm run build
+* see "/build" folder
