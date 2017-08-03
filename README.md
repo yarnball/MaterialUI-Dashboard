@@ -1,12 +1,14 @@
-# Material UI, Rechart, and Social Authentification, with React Router V4 and Firebase V3
+# Material UI, Rechart, and Social Authentication, with React Router V4 and Firebase V3
 
 This is an example repo for authenticating with Firebase and React Router.
 
 *Using React 15.4.0, React Router 4, and Firebase 3.6.1*
 
-### Preview
+### Desktop Preview
 
 ![Screenshot desktop](http://i.imgur.com/RPyTQMl.jpg)
+
+### Mobile Preview
 ![Screenshot Mobile](http://i.imgur.com/ppF2yrE.jpg)
 
 
