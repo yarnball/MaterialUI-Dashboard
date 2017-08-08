@@ -1,6 +1,6 @@
 import React from 'react';
 import AppBar from 'material-ui/AppBar';
-import {white, red500, red400} from 'material-ui/styles/colors';
+import {white, red500} from 'material-ui/styles/colors';
 
 import IconButton from 'material-ui/IconButton';
 import Search from 'material-ui/svg-icons/action/search';
@@ -56,34 +56,17 @@ class SearchBox extends React.Component {
       float: 'left',
       paddingTop: 17
     },
-    textField: {
-      color: white,
-      backgroundColor: red400,
-      borderRadius: 2,
-      height: 25,
-      paddingTop:10,
-    },
-    inputStyle: {
-      color: white,
-      paddingLeft: 5,
-      bottom:5,
-    },
-    hintStyle: {
-      height: 16,
-      paddingLeft: 5,
-      color: white
-    }
   };
     return (
         <div>
       <IconButton style={styles.iconButton} >
         <Search color={white} />
       </IconButton>
-<AutoComplete
+      <AutoComplete
           fullWidth={true}
           hintText="Search..."
           dataSource={books.items.map(x => x.volumeInfo.title)}
-          style={styles}
+          filter={AutoComplete.fuzzyFilter}
         />
         </div>
       );
