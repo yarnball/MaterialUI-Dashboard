@@ -2,10 +2,11 @@ import React from 'react';
 import AppBar from 'material-ui/AppBar';
 import {white, red500, red400} from 'material-ui/styles/colors';
 
-import TextField from 'material-ui/TextField';
 import IconButton from 'material-ui/IconButton';
 import Search from 'material-ui/svg-icons/action/search';
 import ViewModule from 'material-ui/svg-icons/action/view-module';
+import { books } from "../config/dummyData.js";
+import AutoComplete from "material-ui/AutoComplete";
 
 
 class Header extends React.Component {
@@ -78,15 +79,12 @@ class SearchBox extends React.Component {
       <IconButton style={styles.iconButton} >
         <Search color={white} />
       </IconButton>
-          <TextField
-            hintText="Search..."
-            underlineShow={false}
-            fullWidth={true}
-            style={styles.textField}
-            inputStyle={styles.inputStyle}
-            hintStyle={styles.hintStyle}
-          />
-
+<AutoComplete
+          fullWidth={true}
+          hintText="Search..."
+          dataSource={books.items.map(x => x.volumeInfo.title)}
+          style={styles}
+        />
         </div>
       );
   }
