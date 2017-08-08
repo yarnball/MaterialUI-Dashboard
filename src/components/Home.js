@@ -6,6 +6,8 @@ import Test from "./Test";
 import Graph from "./Graph";
 import Graph1 from "./Graph1";
 import Graph2 from "./Graph2";
+import Graph3 from "./Graph3";
+import Graph4 from "./Graph4";
 import Money from "material-ui/svg-icons/editor/attach-money";
 import ThumbUp from "material-ui/svg-icons/action/thumb-up";
 import { books, social } from "../config/dummyData.js";
@@ -151,7 +153,13 @@ export default class Home extends React.Component {
           </div>
 
           <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-md m-b-15">
-            <Graph2 color="hello" iconColor={purple600} boxColor={purple500} />
+            <Graph2 iconColor={purple600} boxColor={purple500} />
+          </div>
+          <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-md m-b-15">
+            <Graph3 iconColor={purple600} boxColor={purple500} />
+          </div>
+          <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-md m-b-15">
+            <Graph4 color="hello" iconColor={purple600} boxColor={purple500} />
           </div>
         </div>
       </div>
